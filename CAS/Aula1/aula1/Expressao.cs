@@ -98,11 +98,11 @@ public class Soma : Expressao
 
     public override Expressao Substituir(Simbolo substituido, Expressao substituto)  
     {
-        if (substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
+        if (a is Simbolo && substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
         {
             return new Soma(substituto, this.b);
         } 
-        else if (substituido.getSimbolo() == (b as Simbolo).getSimbolo())
+        else if (b is Simbolo && substituido.getSimbolo() == (b as Simbolo).getSimbolo())
         {
             return new Soma(this.a, substituto);
         }
@@ -151,13 +151,13 @@ public class Subtracao : Expressao
 
     public override Expressao Substituir(Simbolo substituido, Expressao substituto) 
     {
-        if (substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
+        if (a is Simbolo && substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
         {
-            return new Soma(substituto, this.b);
+            return new Subtracao(substituto, this.b);
         } 
-        else if (substituido.getSimbolo() == (b as Simbolo).getSimbolo())
+        else if (b is Simbolo && substituido.getSimbolo() == (b as Simbolo).getSimbolo())
         {
-            return new Soma(this.a, substituto);
+            return new Subtracao(this.a, substituto);
         }
         else
         {
@@ -202,13 +202,13 @@ public class Multiplicao : Expressao
 
     public override Expressao Substituir(Simbolo substituido, Expressao substituto)  
     {
-        if (substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
+        if (a is Simbolo && substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
         {
-            return new Soma(substituto, this.b);
+            return new Multiplicao(substituto, this.b);
         } 
-        else if (substituido.getSimbolo() == (b as Simbolo).getSimbolo())
+        else if (b is Simbolo && substituido.getSimbolo() == (b as Simbolo).getSimbolo())
         {
-            return new Soma(this.a, substituto);
+            return new Multiplicao(this.a, substituto);
         }
         else
         {
@@ -255,13 +255,13 @@ public class Divisao : Expressao
 
     public override Expressao Substituir(Simbolo substituido, Expressao substituto)  
     {
-        if (substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
+        if (a is Simbolo && substituido.getSimbolo() == (a as Simbolo).getSimbolo()) 
         {
-            return new Soma(substituto, this.b);
+            return new Divisao(substituto, this.b);
         } 
-        else if (substituido.getSimbolo() == (b as Simbolo).getSimbolo())
+        else if (b is Simbolo && substituido.getSimbolo() == (b as Simbolo).getSimbolo())
         {
-            return new Soma(this.a, substituto);
+            return new Divisao(this.a, substituto);
         }
         else
         {
