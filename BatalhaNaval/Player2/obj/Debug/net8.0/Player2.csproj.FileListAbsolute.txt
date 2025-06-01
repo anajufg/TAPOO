@@ -12,3 +12,18 @@
 /home/a2023951555/TAPOO/BatalhaNaval/Player2/obj/Debug/net8.0/Player2.pdb
 /home/a2023951555/TAPOO/BatalhaNaval/Player2/obj/Debug/net8.0/Player2.genruntimeconfig.cache
 /home/a2023951555/TAPOO/BatalhaNaval/Player2/obj/Debug/net8.0/ref/Player2.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\bin\Debug\net8.0\Player2.exe
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\bin\Debug\net8.0\Player2.deps.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\bin\Debug\net8.0\Player2.runtimeconfig.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\bin\Debug\net8.0\Player2.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\bin\Debug\net8.0\Player2.pdb
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.AssemblyInfoInputs.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.AssemblyInfo.cs
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.csproj.CoreCompileInputs.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.sourcelink.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\refint\Player2.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.pdb
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\Player2.genruntimeconfig.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\BatalhaNaval\Player2\obj\Debug\net8.0\ref\Player2.dll

@@ -23,64 +23,77 @@ public class Board
             Console.Write($"{(char)('A' + r)}  ");
             for (int c = 0; c < 10; c++)
             {
-                char cell = board[r, c];
+                char cell = board[r * size + c];
                 Console.Write(!showShips && cell == '*' ? "~ " : $"{cell} ");
             }
             Console.WriteLine();
         }
+        Console.WriteLine("\n");
     }
 
-    public void PlaceShipsRandomly(int n)
+    public void PlaceShipsRandomly(int nShips)
     {
         var rnd = new Random();
         int placed = 0;
-        while (placed < n)
+        while (placed < nShips)
         {
             int r = rnd.Next(10), c = rnd.Next(10);
-            if (board[r, c] == '~')
+            if (board[r * size + c] == '~')
             {
-                board[r, c] = '*';
+                board[r * size + c] = '*';
                 placed++;
             }
         }
+
+        Print(true);
     }
 
-    public void PlaceShipsManually(int n)
+    public void PlaceShipsManually(int nShips)
     {
         Console.WriteLine("Posicione os navios (ex: A1, B2, ...):");
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < nShips; i++)
         {
             Console.Write($"Posição navio {i + 1}: ");
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
+            if (string.IsNullOrEmpty(input) || input.Length < 2)
+            {
+                Console.WriteLine("Posição inválida. Tente novamente.");
+                i--;
+                continue;
+            }
+
             int r = input[0] - 'A';
-            int c = int.Parse(input[1].ToString());
+            int c;
+            if (!int.TryParse(input[1].ToString(), out c) || r < 0 || r >= size || c < 0 || c >= size)
+            {
+                Console.WriteLine("Posição inválida. Tente novamente.");
+                i--;
+                continue;
+            }
             if (!IsShip(r, c))
             {
-                board[r, c] = '*';
+                board[r * size + c] = '*';
             }
-            else if (IsShip(r, c))
+            else
             {
                 Console.WriteLine("Posição já ocupada. Tente novamente.");
                 i--;
             }
-            else
-            {
-                Console.WriteLine("Posição inválida. Tente novamente.");
-                i--;
-            }
         }
+
+        Print(true);
     }
 
     public bool IsShip(int r, int c)
     {
-        return board[r, c] == '*';
+        return board[r * size + c] == '*';
     }
 
     public bool MarkHit(int r, int c)
     {
         if (IsShip(r, c))
         {
-            board[r, c] = 'X';
+            board[r * size + c] = 'X';
             return true;
         }
         else
@@ -91,9 +104,9 @@ public class Board
 
     public bool MarkMiss(int r, int c)
     {
-        if (board[r, c] == '~')
+        if (board[r * size + c] == '~')
         {
-            board[r, c] = 'O';
+            board[r * size + c] = 'O';
             return true;
         }
         else
