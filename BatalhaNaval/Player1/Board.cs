@@ -1,15 +1,18 @@
 public class Board
 {
     public int size;
-    public char[] board;
+    public char[,] board;
 
     public Board(int size)
     {
         this.size = size;
-        this.board = new char[size * size];
-        for (int i = 0; i < board.Length; i++)
+        this.board = new char[size, size];
+        for (int r = 0; r < size; r++)
         {
-            board[i] = '~';
+            for (int c = 0; c < size; c++)
+            {
+                board[r, c] = '~';
+            }
         }
     }
 
@@ -23,7 +26,7 @@ public class Board
             Console.Write($"{(char)('A' + r)}  ");
             for (int c = 0; c < 10; c++)
             {
-                char cell = board[r * size + c];
+                char cell = board[r, c];
                 Console.Write(!showShips && cell == '*' ? "~ " : $"{cell} ");
             }
             Console.WriteLine();
@@ -38,9 +41,9 @@ public class Board
         while (placed < nShips)
         {
             int r = rnd.Next(10), c = rnd.Next(10);
-            if (board[r * size + c] == '~')
+            if (board[r, c] == '~')
             {
-                board[r * size + c] = '*';
+                board[r, c] = '*';
                 placed++;
             }
         }
@@ -72,7 +75,7 @@ public class Board
             }
             if (!IsShip(r, c))
             {
-                board[r * size + c] = '*';
+                board[r, c] = '*';
             }
             else
             {
@@ -86,14 +89,14 @@ public class Board
 
     public bool IsShip(int r, int c)
     {
-        return board[r * size + c] == '*';
+        return board[r, c] == '*';
     }
 
     public bool MarkHit(int r, int c)
     {
         if (IsShip(r, c))
         {
-            board[r * size + c] = 'X';
+            board[r, c] = 'X';
             return true;
         }
         else
@@ -104,14 +107,14 @@ public class Board
 
     public bool MarkMiss(int r, int c)
     {
-        if (board[r * size + c] == '~')
+        if (board[r, c] == '~')
         {
-            board[r * size + c] = 'O';
-            return true;
+            board[r, c] = 'O';
+            return false;
         }
         else
         {
-            return false;
+            return true;
         }
     }
 

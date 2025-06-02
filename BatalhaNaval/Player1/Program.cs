@@ -1,12 +1,11 @@
 ﻿const int port = 9000;
+int nShips = 10;
 Player1 player1 = new Player1();
 
 await player1.StartServer(port);
 
 Console.Clear();
 Console.WriteLine("Vamos jogar Batalha Naval!");
-Console.WriteLine("Digite o número de navios:");
-int nShips = int.Parse(Console.ReadLine());
 int choice;
 
 do
@@ -30,7 +29,7 @@ do
             Console.WriteLine("Opção inválida. Tente novamente");
             return;
     }
-} while (choice != 1 && choice != 0);
+} while (choice != 1 && choice != 2);
 
 await player1.Run();
 
