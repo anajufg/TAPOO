@@ -1,0 +1,14 @@
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.GeneratedMSBuildEditorConfig.editorconfig
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.AssemblyInfoInputs.cache
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.AssemblyInfo.cs
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.csproj.CoreCompileInputs.cache
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/bin/Debug/net8.0/WeatherForecast
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/bin/Debug/net8.0/WeatherForecast.deps.json
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/bin/Debug/net8.0/WeatherForecast.runtimeconfig.json
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/bin/Debug/net8.0/WeatherForecast.dll
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/bin/Debug/net8.0/WeatherForecast.pdb
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.dll
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/refint/WeatherForecast.dll
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.pdb
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/WeatherForecast.genruntimeconfig.cache
+/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/Debug/net8.0/ref/WeatherForecast.dll
