@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/a2023951555/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj": {}
+    "/home/a2023951555/Github/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj": {}
   },
   "projects": {
-    "/home/a2023951555/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj": {
+    "/home/a2023951555/Github/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/a2023951555/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj",
+        "projectUniqueName": "/home/a2023951555/Github/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj",
         "projectName": "WeatherForecast",
-        "projectPath": "/home/a2023951555/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj",
+        "projectPath": "/home/a2023951555/Github/TAPOO/APIs REST/WeatherForecast/WeatherForecast.csproj",
         "packagesPath": "/home/a2023951555/.nuget/packages/",
-        "outputPath": "/home/a2023951555/TAPOO/APIs REST/WeatherForecast/obj/",
+        "outputPath": "/home/a2023951555/Github/TAPOO/APIs REST/WeatherForecast/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/a2023951555/.nuget/NuGet/NuGet.Config"
