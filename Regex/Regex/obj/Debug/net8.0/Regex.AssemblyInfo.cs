@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WeatherForecast")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Regex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd616a848d8f8ebc778f3f161eded76e0991237b")]
-[assembly: System.Reflection.AssemblyProductAttribute("WeatherForecast")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WeatherForecast")]
+[assembly: System.Reflection.AssemblyProductAttribute("Regex")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Regex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

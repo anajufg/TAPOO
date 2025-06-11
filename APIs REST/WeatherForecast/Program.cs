@@ -35,6 +35,8 @@ async Task Main()
     double? valorAnterior = null;
     bool dadosValidos = false;
 
+    Console.Clear();
+
     do
     {
         Console.WriteLine("Escolha uma unidade de tempertura [celsius, kelvin ou fahrenheit]:");
