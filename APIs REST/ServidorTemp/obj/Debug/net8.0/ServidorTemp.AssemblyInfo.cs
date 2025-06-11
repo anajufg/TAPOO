@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServidorTemp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e68bc75235a5023d80ec9bad73b60c09c2dd659")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ff7b2945f4516933d7efbbbc08701ad772c079a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServidorTemp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServidorTemp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

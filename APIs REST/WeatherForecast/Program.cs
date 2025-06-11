@@ -1,48 +1,80 @@
 using System;
 
 ClientHttp client = new ClientHttp();
+CancellationTokenSource cts = new CancellationTokenSource();
 
-void ExibirResultadosNoConsole(string simbolo, decimal precoAtual, decimal precoAnterior) 
+void ExibirTemperatura(string unidade, double valorAtual, double? valorAnterior)
 {
-	var corOriginal = Console.ForegroundColor;
-	Console.ForegroundColor = precoAtual > precoAnterior ? ConsoleColor.Green : ConsoleColor.Red;
-	Console.WriteLine($"{simbolo}: ${precoAtual:N2} {(precoAtual > precoAnterior ? "↑" : "↓")}");
-	Console.ForegroundColor = corOriginal;
+    var seta = "-";
+    var corOriginal = Console.ForegroundColor;
+    if (valorAtual > valorAnterior)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        seta = "↑";
+    }
+    else if (valorAnterior > valorAtual)
+    {
+        Console.ForegroundColor = ConsoleColor.Blue;
+        seta = "↓";
+    }
+    Console.WriteLine($"{seta} Unidade: {unidade} | Valor: {valorAtual:N2} | Horário: {DateTime.Now.ToString("HH:mm:ss")}");
+    Console.ForegroundColor = corOriginal;
 }
+
+Console.CancelKeyPress += (sender, e) =>
+{
+    Console.WriteLine("\nEncerrando monitoramento de temperatura...");
+    e.Cancel = true; 
+    cts.Cancel();    
+};
 
 async Task Main()
 {
-    string? tmp;
-    double interval = 0; 
-    bool tmpAndIntervalValid = false;
+    string? unidade;
+    double intervalo = 0;
+    double? valorAnterior = null;
+    bool dadosValidos = false;
 
     do
     {
         Console.WriteLine("Escolha uma unidade de tempertura [celsius, kelvin ou fahrenheit]:");
-        tmp = Console.ReadLine();
+        unidade = Console.ReadLine()?.ToLower();
 
-        if (tmp != "celsius" && tmp != "kelvin" && tmp != "fahrenheit")
+        if (unidade != "celsius" && unidade != "kelvin" && unidade != "fahrenheit")
         {
             Console.WriteLine("Unidade inválida.");
             continue;
         }
 
-        Console.WriteLine("Escolha um intervalo em segundos para efetuar cada nova leitura:");
-        string? input = Console.ReadLine();
-        if (!double.TryParse(input, out interval) || interval < 0)
+        Console.WriteLine("Escolha um intervalo (em segundos) entre as leituras:");
+        if (!double.TryParse(Console.ReadLine(), out intervalo) || intervalo <= 0)
         {
             Console.WriteLine("Intervalo inválido.");
             continue;
         }
 
-        tmpAndIntervalValid = true;
+        dadosValidos = true;
 
-    } while (!tmpAndIntervalValid);
+    } while (!dadosValidos);
 
-    while (true)
+    while (!cts.Token.IsCancellationRequested)
     {
-        await client.Run();
-        await Task.Delay(TimeSpan.FromSeconds(interval));
+        var (unidadeObtida, valor) = await client.ObterTemperaturaAsync(unidade);
+
+        if (valor != null)
+        {
+            ExibirTemperatura(unidadeObtida, valor, valorAnterior);
+            valorAnterior = valor;
+        }
+
+        try
+        {
+            await Task.Delay(TimeSpan.FromSeconds(intervalo), cts.Token);
+        }
+        catch (TaskCanceledException)
+        {
+            break;
+        }
     }
 }
 
