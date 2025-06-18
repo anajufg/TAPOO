@@ -1,0 +1,15 @@
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.GeneratedMSBuildEditorConfig.editorconfig
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.AssemblyInfoInputs.cache
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.AssemblyInfo.cs
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.csproj.CoreCompileInputs.cache
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.sourcelink.json
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/bin/Debug/net8.0/ArayPool
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/bin/Debug/net8.0/ArayPool.deps.json
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/bin/Debug/net8.0/ArayPool.runtimeconfig.json
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/bin/Debug/net8.0/ArayPool.dll
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/bin/Debug/net8.0/ArayPool.pdb
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.dll
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/refint/ArayPool.dll
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.pdb
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ArayPool.genruntimeconfig.cache
+/home/a2023951555/Github/TAPOO/ArrayPool/ArayPool/obj/Debug/net8.0/ref/ArayPool.dll
