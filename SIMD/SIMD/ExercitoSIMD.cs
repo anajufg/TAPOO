@@ -19,6 +19,14 @@ public class ExercitoSIMD
    
 	public void ConverterDePersonagens(Personagem[] personagens)
 	{
-    	// Implementar conversão
+    	for (int i = 0; i < personagens.Length; i++)
+        {
+            Ataques[i] = personagens[i].Ataque;
+            Defesas[i] = personagens[i].Defesa;
+            ChancesCritico[i] = personagens[i].ChanceCritico;
+            MultCriticos[i] = personagens[i].MultCritico;
+            Vidas[i] = personagens[i].Vida;
+            Vivos[i] = personagens[i].Vivo;
+        }
 	}
 }
