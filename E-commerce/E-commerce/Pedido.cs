@@ -32,13 +32,23 @@ public class Pedido : IObservable<IObservadorPedido>
 	}
 }
 
-public class NotificadorEmail()
+public class NotificadorEmail : IObservable<IObservadorPedido>
 {
-
+	public void AoMudarStatusPedido(Pedido pedido, string novoStatus)
+	{
+		Console.WriteLine($"Enviando e‑mail...");
+		Console.WriteLine($"Status alterado para \"{novoStatus}\".");
+		Console.WriteLine("E‑mail enviado!\n");
+	}
 }
 
-public class NotificadorSMS()
+public class NotificadorSMS : IObservable<IObservadorPedido>
 {
-	
+    public void AoMudarStatusPedido(Pedido pedido, string novoStatus)
+    {
+        Console.WriteLine($"Enviando SMS...");
+        Console.WriteLine($"Seu pedido agora está \"{novoStatus}\".");
+        Console.WriteLine("SMS enviado!\n");
+    }
 }
 
