@@ -32,4 +32,13 @@ public class Pedido : IObservable<IObservadorPedido>
 	}
 }
 
-// TODO: Implementar NotificadorEmail e NotificadorSMS
+public class NotificadorEmail()
+{
+
+}
+
+public class NotificadorSMS()
+{
+	
+}
+
