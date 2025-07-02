@@ -1,0 +1,5 @@
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.GeneratedMSBuildEditorConfig.editorconfig
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.AssemblyInfoInputs.cache
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.AssemblyInfo.cs
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.csproj.CoreCompileInputs.cache
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.sourcelink.json

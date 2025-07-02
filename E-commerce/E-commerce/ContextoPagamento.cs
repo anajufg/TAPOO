@@ -26,8 +26,7 @@ public class PagamentoCartaoCredito : IEstrategiaPagamento
 
 	public override bool ProcessarPagamento(decimal valor)
 	{
-		if (valor > 0 && valor < 5000) true;
-		else false;
+		return valor > 0 && valor < 5000;
 	}
 
 	public override string ObterDetalhespagamento()
@@ -43,8 +42,7 @@ public class PaymentPayPal : IEstrategiaPagamento
 
 	public override bool ProcessarPagamento(decimal valor)
 	{
-		if (valor > 0 && EmailPayPal != null || EmailPayPal != "") true;
-		else false;
+		return valor > 0 && EmailPayPal != null || EmailPayPal != "";
 	}
 
 	public override string ObterDetalhespagamento()
