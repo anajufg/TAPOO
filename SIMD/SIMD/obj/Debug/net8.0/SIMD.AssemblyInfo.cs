@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIMD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e09a285689cc2cb03686badd15b645bff719ac12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8090af56aaad27fa977b47dca122d7aadf73719")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIMD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIMD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

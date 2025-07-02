@@ -54,15 +54,15 @@ class Program
             double dpsSIMD = danoSIMD * 1000.0 / Math.Max(1, tempoSIMD);
 
 
-			Console.WriteLine("===ORIGINAL ===");
-            Console.WriteLine($"   Dano total causado: {danoOriginal:N0}");
-            Console.WriteLine($"   Tempo sem SIMD: {tempoOriginal} ms");
-            Console.WriteLine($"   DPS (danos por segundo): {dpsOriginal:N0}");
+			Console.WriteLine("=> ORIGINAL");
+            Console.WriteLine($"   Dano total: {danoOriginal:N0}");
+            Console.WriteLine($"   Tempo: {tempoOriginal} ms");
+            Console.WriteLine($"   DPS: {dpsOriginal:N0}\n");
 
-			Console.WriteLine("===ORIGINAL ===");
+			Console.WriteLine("=> SIMD");
             Console.WriteLine($"   Dano total: {danoSIMD:N0}");
             Console.WriteLine($"   Tempo: {tempoSIMD} ms");
-            Console.WriteLine($"   DPS: {dpsSIMD:N0}");
+            Console.WriteLine($"   DPS: {dpsSIMD:N0}\n");
 
             double speedup = (double)tempoOriginal / Math.Max(1, tempoSIMD);
             Console.WriteLine($"Speedup: {speedup:F2}x");
