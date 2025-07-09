@@ -8,9 +8,10 @@ public abstract class Produto
 
 public class Eletronico : Produto
 {
-	public Eletronico(String nome, double preco)
+	public Eletronico(String nome, decimal preco)
 	{
-		super(nome, preco);
+		Nome = nome;
+		Preco = preco;
 	}
 
 	public override string ObterCategoria()
@@ -20,17 +21,18 @@ public class Eletronico : Produto
 
 	public override decimal CalcularFrete()
 	{
-		return Preco * 0.05;
+		return Preco * 0.05m;
     }
 }
 
 public class Roupa : Produto
 {
-	private string Tamanho { get; set; }
+	public string Tamanho { get; set; }
 
-	public Roupa(String nome, double preco, string tamanho)
+	public Roupa(String nome, decimal preco, string tamanho)
 	{
-		super(nome, preco);
+		Nome = nome;
+		Preco = preco;
 		Tamanho = tamanho;
 	}
 	
@@ -41,18 +43,19 @@ public class Roupa : Produto
 
 	public override decimal CalcularFrete()
 	{
-		return 12.50;
+		return 12.50m;
     }
 }
 
 public class Livro : Produto
 {
-	private string Author { get; set; }
-	private int NumPaginas { get; set; }
+	public string Author { get; set; }
+	public int NumPaginas { get; set; }
 
-	public Livro(String nome, double preco, string author, int numPaginas)
+	public Livro(String nome, decimal preco, string author, int numPaginas) 
 	{
-		super(nome, preco);
+		Nome = nome;
+		Preco = preco;
 		Author = author;
 		NumPaginas = numPaginas;
 	}
@@ -65,7 +68,7 @@ public class Livro : Produto
 	public override decimal CalcularFrete()
 	{
 		if (NumPaginas > 300) return 8;
-		else return 5;
+		else return 5m;
     }
 }
 
@@ -78,23 +81,33 @@ public class FabricaEletronicos : FabricaProduto
 {
 	public override Produto CriarProduto(string nome, decimal preco)
 	{
-    	    return new Eletronico { Nome = nome, Preco = preco };
+    	   return new Eletronico(nome, preco);
 	}
 }
 
 public class FabricaRoupa : FabricaProduto
 {
-	public override Produto CriarProduto(string nome, decimal preco, string tamanho)
+	public override Produto CriarProduto(string nome, decimal preco)
 	{
-		return new Roupa { Nome = nome, Preco = preco, Tamanho = tamanho };
+		return new Roupa(nome, preco, "M");
+	}
+
+	public Produto CriarProduto(string nome, decimal preco, string tamanho)
+	{
+		return new Roupa(nome, preco, tamanho);
 	}
 }
 
 public class FabricaLivro : FabricaProduto
 {
-	public override Produto CriarProduto(string nome, decimal preco, string autor, int numPaginas)
+	public override Produto CriarProduto(string nome, decimal preco)
 	{
-		return new Livro { Nome = nome, Preco = preco, Autor = autor, NumPaginas = numPaginas };
+		return new Livro(nome, preco, "Desconhecido", 100);
+	}
+
+	public Produto CriarProduto(string nome, decimal preco, string autor, int numPaginas)
+	{
+		return new Livro(nome, preco, autor, numPaginas);
 	}
 }
 

@@ -6,7 +6,7 @@ public interface IEstrategiaPagamento
 
 public class ContextoPagamento
 {
-	private IEstrategiaPagamento _estrategiaPagamento;
+	public IEstrategiaPagamento _estrategiaPagamento;
    
 	public void DefinirEstrategiaPagamento(IEstrategiaPagamento estrategia)
 	{
@@ -21,50 +21,46 @@ public class ContextoPagamento
 
 public class PagamentoCartaoCredito : IEstrategiaPagamento
 {
-	private int NumCartao { get; }
-	private string NomeTitular { get; }
+	public int NumCartao { get; }
+	public string NomeTitular { get; }
 
-	public override bool ProcessarPagamento(decimal valor)
+	public bool ProcessarPagamento(decimal valor)
 	{
 		return valor > 0 && valor < 5000;
 	}
 
-	public override string ObterDetalhespagamento()
+	public string ObterDetalhespagamento()
 	{
-		Console.WriteLine("Cartão de Crédito");
-		Console.WriteLine(NumCartao % 10000);
+		return $"Cartão de Crédito\n****{NumCartao % 10000}";
 	}
 }
 
 public class PaymentPayPal : IEstrategiaPagamento
 {
-	private string EmailPayPal { get; }
+	public string EmailPayPal { get; }
 
-	public override bool ProcessarPagamento(decimal valor)
+	public bool ProcessarPagamento(decimal valor)
 	{
-		return valor > 0 && EmailPayPal != null || EmailPayPal != "";
+		return (valor > 0 && EmailPayPal != null) || EmailPayPal != "";
 	}
 
-	public override string ObterDetalhespagamento()
+	public string ObterDetalhespagamento()
 	{
-		Console.WriteLine("PayPal");
-		Console.WriteLine($"Email: {EmailPayPal}");
+		return $"PayPal\nEmail: {EmailPayPal}";
 	}
 }
 
 public class PagamentoPix : IEstrategiaPagamento
 {
-	private int ChavePix { get; }
+	public int ChavePix { get; }
 
-		public override bool ProcessarPagamento(decimal valor)
+	public bool ProcessarPagamento(decimal valor)
 	{
-		if (valor > 0) true;
-		else false;
+		return valor > 0;
 	}
 
-	public override string ObterDetalhespagamento()
+	public string ObterDetalhespagamento()
 	{
-		Console.WriteLine("PIX");
-		Console.WriteLine($"Chave: {ChavePix}");
+		return $"PIX\nChave: {ChavePix}";
 	}
 }

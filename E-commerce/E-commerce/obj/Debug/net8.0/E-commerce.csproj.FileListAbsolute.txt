@@ -3,3 +3,13 @@
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.AssemblyInfo.cs
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.csproj.CoreCompileInputs.cache
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.sourcelink.json
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/bin/Debug/net8.0/E-commerce
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/bin/Debug/net8.0/E-commerce.deps.json
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/bin/Debug/net8.0/E-commerce.runtimeconfig.json
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/bin/Debug/net8.0/E-commerce.dll
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/bin/Debug/net8.0/E-commerce.pdb
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.dll
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/refint/E-commerce.dll
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.pdb
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.genruntimeconfig.cache
+/home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/ref/E-commerce.dll

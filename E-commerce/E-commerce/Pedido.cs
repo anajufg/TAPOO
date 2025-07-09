@@ -3,7 +3,7 @@ public interface IObservadorPedido
 	void AoMudarStatusPedido(Pedido pedido, string novoStatus);
 }
 
-public class Pedido : IObservable<IObservadorPedido>
+public class Pedido
 {
 	private List<IObservadorPedido> _observadores = new List<IObservadorPedido>();
 	private string _status;
@@ -32,7 +32,7 @@ public class Pedido : IObservable<IObservadorPedido>
 	}
 }
 
-public class NotificadorEmail : IObservable<IObservadorPedido>
+public class NotificadorEmail : IObservadorPedido
 {
 	public void AoMudarStatusPedido(Pedido pedido, string novoStatus)
 	{
@@ -42,7 +42,7 @@ public class NotificadorEmail : IObservable<IObservadorPedido>
 	}
 }
 
-public class NotificadorSMS : IObservable<IObservadorPedido>
+public class NotificadorSMS : IObservadorPedido
 {
     public void AoMudarStatusPedido(Pedido pedido, string novoStatus)
     {
