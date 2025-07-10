@@ -21,8 +21,8 @@ public class ContextoPagamento
 
 public class PagamentoCartaoCredito : IEstrategiaPagamento
 {
-	public int NumCartao { get; }
-	public string NomeTitular { get; }
+	public int NumCartao { set; get; }
+	public string NomeTitular { set; get; }
 
 	public bool ProcessarPagamento(decimal valor)
 	{
@@ -37,7 +37,7 @@ public class PagamentoCartaoCredito : IEstrategiaPagamento
 
 public class PaymentPayPal : IEstrategiaPagamento
 {
-	public string EmailPayPal { get; }
+	public string EmailPayPal { set; get; }
 
 	public bool ProcessarPagamento(decimal valor)
 	{
@@ -46,13 +46,13 @@ public class PaymentPayPal : IEstrategiaPagamento
 
 	public string ObterDetalhespagamento()
 	{
-		return $"PayPal\nEmail: {EmailPayPal}";
+		return $"PaymentPayPal\nEmail: {EmailPayPal}";
 	}
 }
 
 public class PagamentoPix : IEstrategiaPagamento
 {
-	public int ChavePix { get; }
+	public int ChavePix { set;  get; }
 
 	public bool ProcessarPagamento(decimal valor)
 	{

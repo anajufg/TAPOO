@@ -27,11 +27,8 @@ public class DecoradorGarantia : DecoradorProduto
 
 public class DecoradorFreteExpresso : DecoradorProduto
 {
-	public DecoradorFreteExpresso(Produto produto) : base(produto)
-	{
-		Preco += 20; 
-	}
-
+	public DecoradorFreteExpresso(Produto produto) : base(produto) => Preco = produto.Preco + 20; 
+	
 	public override decimal CalcularFrete() => _produto.CalcularFrete() + 15; // acréscimo de R$15 no frete
 
 	public override string ObterCategoria() => base.ObterCategoria() + " + Frete Expresso";
@@ -40,10 +37,8 @@ public class DecoradorFreteExpresso : DecoradorProduto
 
 public class DecoradorEmbalagem : DecoradorProduto
 {
-	public DecoradorEmbalagem(Produto produto) : base(produto)
-	{
-		Preco += 5; 
-	}
+	public DecoradorEmbalagem(Produto produto) : base(produto) => Preco = produto.Preco + 5; 
+	
 
 	public override string ObterCategoria() => base.ObterCategoria() + " + Embalagem Especial";
 

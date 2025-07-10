@@ -13,3 +13,18 @@
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.pdb
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/E-commerce.genruntimeconfig.cache
 /home/a2023951555/Github/TAPOO/E-commerce/E-commerce/obj/Debug/net8.0/ref/E-commerce.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\bin\Debug\net8.0\E-commerce.exe
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\bin\Debug\net8.0\E-commerce.deps.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\bin\Debug\net8.0\E-commerce.runtimeconfig.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\bin\Debug\net8.0\E-commerce.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\bin\Debug\net8.0\E-commerce.pdb
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.AssemblyInfoInputs.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.AssemblyInfo.cs
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.csproj.CoreCompileInputs.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.sourcelink.json
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\refint\E-commerce.dll
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.pdb
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\E-commerce.genruntimeconfig.cache
+C:\Users\ideis\OneDrive\Área de Trabalho\GitHub\TAPOO\E-commerce\E-commerce\obj\Debug\net8.0\ref\E-commerce.dll
