@@ -66,25 +66,21 @@ namespace MeuJogo
             {
                 direction.Y -= 1;
                 _currentDirection = Direction.Up;
-                _isMoving = true;
             }
             if (keyboard.IsKeyDown(Keys.S) || keyboard.IsKeyDown(Keys.Down))
             {
                 direction.Y += 1;
                 _currentDirection = Direction.Down;
-                _isMoving = true;
             }
             if (keyboard.IsKeyDown(Keys.A) || keyboard.IsKeyDown(Keys.Left))
             {
                 direction.X -= 1;
                 _currentDirection = Direction.Left;
-                _isMoving = true;
             }
             if (keyboard.IsKeyDown(Keys.D) || keyboard.IsKeyDown(Keys.Right))
             {
                 direction.X += 1;
                 _currentDirection = Direction.Right;
-                _isMoving = true;
             }
 
             if (direction != Vector2.Zero)
